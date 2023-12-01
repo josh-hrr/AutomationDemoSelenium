@@ -17,14 +17,26 @@ public class Tables {
 		
 		Thread.sleep(1000);
 		
+		int sum = 0;
 		List<WebElement> rows = chrome.findElements(By.xpath("//table[@name='BookTable']//tr")); 
 		for(int i = 2; i<=rows.size(); i++) {  
 			String bookName = chrome.findElement(By.xpath("//table[@name='BookTable']//tr["+i+"]//td[1]")).getText();
+			String price = chrome.findElement(By.xpath("//table[@name='BookTable']//tr["+i+"]//td[4]")).getText();
+			sum = sum + (Integer.parseInt(price));
+
+			   
+
 			if(bookName.equals("Master In Selenium")) {
 				String author = chrome.findElement(By.xpath("//table[@name='BookTable']//tr["+i+"]//td[2]")).getText();
-				System.out.println(author);
-;			}
+				System.out.println("Master In Selenium author is: " + author); 
+			}
 		}
+		
+		System.out.println("Total price of this table is: " + sum);
+		
+		
+		Thread.sleep(1000); 
+		
 	}
 
 }
