@@ -42,11 +42,6 @@ public class JavascriptExecutorClass {
 		
 		js.executeScript("arguments[0].click()", buttonElement); 
 		
-		Thread.sleep(1000);  
-		
-		
-		
-		
-		
+		Thread.sleep(1000);    
 	}
 }
