@@ -5,15 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPage {
+public class LoginPage extends POBasePage {
 	
 	public WebDriver chrome;
 	
 	public LoginPage(WebDriver chrome){
-		this.chrome = chrome;
-		PageFactory.initElements(chrome, this);
+		super(chrome);
 	}
-	
+
 	//locators
 	
 	@FindBy(css="img[alt='company-branding']") 
