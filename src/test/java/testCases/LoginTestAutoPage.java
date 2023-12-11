@@ -12,9 +12,11 @@ public class LoginTestAutoPage extends TCBaseBeforeAfter {
 	String name = "Joshua";
 	String email = "test@12345678910.com";
 	
-	@Test(priority=1, dependsOnMethods={"setup"})
+	@Test(priority=1)
 	void homePageShouldBeLoaded() {
-		loginPage = new POLoginPageAutoPage(chrome);
+		logger.debug("Application logs...");
+		logger.info("Starting Test Case 01");
+		loginPage = new POLoginPageAutoPage(driver);
 		Assert.assertEquals(loginPage.getSlideShowText(), "AutomationExercise");
 	}
 	
@@ -22,6 +24,7 @@ public class LoginTestAutoPage extends TCBaseBeforeAfter {
 	void signupFormShouldBeFilledOut() throws InterruptedException {
 		Thread.sleep(2000);
 		loginPage.clickLoginBtn();
+		logger.info("Clicked on Login button");
 		Thread.sleep(2000);
 		Assert.assertEquals(loginPage.getTabTitle(), "Automation Exercise - Signup / Login");
 		loginPage.setName(name);

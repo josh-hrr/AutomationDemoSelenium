@@ -1,0 +1,22 @@
+10:05:13.629 [main] INFO  testCases.LoginTestAutoPage - *** Starting Test Case ***
+10:14:49.611 [main] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+10:14:52.256 [main] INFO  testCases.LoginTestAutoPage - Clicked on Login button
+10:19:59.634 [main] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+10:20:02.107 [main] INFO  testCases.LoginTestAutoPage - Clicked on Login button
+10:34:53.876 [TestNG-tests-1] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+10:34:57.603 [TestNG-tests-3] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+10:35:03.134 [TestNG-tests-1] INFO  testCases.LoginTestAutoPage - Clicked on Login button
+10:35:25.024 [TestNG-tests-3] INFO  testCases.LoginTestAutoPage - Clicked on Login button
+10:53:15.732 [TestNG-tests-1] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+10:53:18.835 [TestNG-tests-3] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+10:53:52.879 [TestNG-tests-3] INFO  testCases.LoginTestAutoPage - Clicked on Login button
+10:53:57.989 [TestNG-tests-1] INFO  testCases.LoginTestAutoPage - Clicked on Login button
+11:17:29.409 [TestNG-tests-1] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+11:17:32.320 [TestNG-tests-3] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+11:17:40.003 [TestNG-tests-1] INFO  testCases.LoginTestAutoPage - Clicked on Login button
+11:18:07.360 [TestNG-tests-3] INFO  testCases.LoginTestAutoPage - Clicked on Login button
+11:25:37.894 [TestNG-tests-3] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+11:28:14.241 [main] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+11:28:16.813 [main] INFO  testCases.LoginTestAutoPage - Clicked on Login button
+11:30:09.019 [main] INFO  testCases.LoginTestAutoPage - Starting Test Case 01
+11:30:11.541 [main] INFO  testCases.LoginTestAutoPage - Clicked on Login button

@@ -6,9 +6,16 @@
       <class name="testCases.LoginTestAutoPage">
         <methods>
           <include name="accountShouldBeCreated"/>
+          <include name="signupBtnShouldBeClicked"/>
+          <include name="homePageShouldBeLoaded"/>
           <include name="accountShouldBeDeleted"/>
           <include name="setup"/>
+          <include name="signUpShouldBeFilledOut"/>
+          <include name="signupFormShouldBeFilledOut"/>
+          <include name="signUpShouldBeSubmitted"/>
           <include name="tearDown"/>
+          <include name="radioButtonShouldBeClicked"/>
+          <include name="continueBtnShouldBeClicked"/>
         </methods>
       </class> <!-- testCases.LoginTestAutoPage -->
     </classes>
