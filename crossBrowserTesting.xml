@@ -9,16 +9,14 @@
   <test thread-count="5" name="ChromeTests">
 	<parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="testCases.LoginTestAutoPage"/>
-      <class name="testCases.LoginTest"/>
+      <class name="testCases.LoginTestAutoPage"/> 
     </classes>
   </test> <!-- CreateAcctTest -->
   
-  <test thread-count="5" name="EdgeTests">
-	<parameter name="browser" value="edge"></parameter>
+  <test thread-count="5" name="FireFox">
+	<parameter name="browser" value="firefox"></parameter>
     <classes>
-      <class name="testCases.LoginTestAutoPage"/>
-      <class name="testCases.LoginTest"/>
+      <class name="testCases.LoginTestAutoPage"/> 
     </classes>
   </test> <!-- CreateAcctTest --> 
   

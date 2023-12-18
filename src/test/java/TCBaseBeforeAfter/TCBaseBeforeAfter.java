@@ -38,8 +38,8 @@ public class TCBaseBeforeAfter {
 		
 		if(browser.equals("chrome")) {
 			driver = new ChromeDriver();
-		}else if(browser.equals("edge")) {
-			driver = new EdgeDriver();
+		}else if(browser.equals("firefox")) {
+			driver = new FirefoxDriver();
 		} 
 		driver.manage().deleteAllCookies();
 		driver.get(resource.getString("appUrl"));  
@@ -49,7 +49,7 @@ public class TCBaseBeforeAfter {
 	public void tearDown() {
 		driver.quit();
 	}  
-	
+	 
 	public String captureScreen(String tname) throws IOException {
 
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
@@ -63,7 +63,6 @@ public class TCBaseBeforeAfter {
 		} catch (Exception e) {
 			e.getMessage();
 		}
-		return destination;
-
-	}
+		return destination; 
+	}  
 }

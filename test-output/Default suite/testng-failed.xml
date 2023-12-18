@@ -5,11 +5,11 @@
     <classes>
       <class name="testCases.LoginTestAutoPage">
         <methods>
-          <include name="accountShouldBeCreated"/>
           <include name="signupBtnShouldBeClicked"/>
-          <include name="homePageShouldBeLoaded"/>
+          <include name="accountShouldBeCreated"/>
           <include name="accountShouldBeDeleted"/>
           <include name="setup"/>
+          <include name="homePageShouldBeLoaded"/>
           <include name="signUpShouldBeFilledOut"/>
           <include name="signupFormShouldBeFilledOut"/>
           <include name="signUpShouldBeSubmitted"/>
