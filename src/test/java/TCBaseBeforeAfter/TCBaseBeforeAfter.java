@@ -33,11 +33,14 @@ public class TCBaseBeforeAfter {
 		resource = ResourceBundle.getBundle("config");
 		
 		logger = LogManager.getLogger(this.getClass()); 
+		
 		ChromeOptions options = new ChromeOptions();
+		String downloadDir = System.getProperty("user.dir") + "\\downloads";
+		options.addArguments("download.default_directory=" + downloadDir);
 		options.setExperimentalOption("excludeSwitches", new String[] {"enable-automation"});
 		
 		if(browser.equals("chrome")) {
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 		}else if(browser.equals("firefox")) {
 			driver = new FirefoxDriver();
 		} 

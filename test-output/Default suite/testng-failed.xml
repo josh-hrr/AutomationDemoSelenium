@@ -5,7 +5,13 @@
     <classes>
       <class name="testCases.PlaceOrderE2E">
         <methods>
+          <include name="addProductToCart"/>
           <include name="setup"/>
+          <include name="invoiceShouldBeDownload"/>
+          <include name="proceedToCheckout"/>
+          <include name="loginBtnShouldBeClicked"/>
+          <include name="loginShouldBeSuccessful"/>
+          <include name="payAndConfirmOrder"/>
           <include name="homeShouldBeLoaded"/>
           <include name="tearDown"/>
         </methods>

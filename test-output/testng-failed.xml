@@ -4,24 +4,18 @@
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
   </listeners>
-  <test thread-count="5" name="FireFox(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="5" name="ChromeTests(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.CreateAcctTestAutoPage">
+      <class name="testCases.PlaceOrderE2E">
         <methods>
-          <include name="homePageShouldBeLoaded"/>
-          <include name="accountShouldBeDeleted"/>
-          <include name="signUpShouldBeFilledOut"/>
-          <include name="signupFormShouldBeFilledOut"/>
           <include name="setup"/>
-          <include name="signupBtnShouldBeClicked"/>
-          <include name="accountShouldBeCreated"/>
-          <include name="radioButtonShouldBeClicked"/>
-          <include name="continueBtnShouldBeClicked"/>
+          <include name="proceedToCheckout"/>
+          <include name="invoiceShouldBeDownload"/>
+          <include name="payAndConfirmOrder"/>
           <include name="tearDown"/>
-          <include name="signUpShouldBeSubmitted"/>
         </methods>
-      </class> <!-- testCases.CreateAcctTestAutoPage -->
+      </class> <!-- testCases.PlaceOrderE2E -->
     </classes>
-  </test> <!-- FireFox(failed) -->
+  </test> <!-- ChromeTests(failed) -->
 </suite> <!-- Failed suite [CreateAcctSuite] -->

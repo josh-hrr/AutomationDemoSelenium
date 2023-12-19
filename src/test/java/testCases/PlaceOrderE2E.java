@@ -16,7 +16,8 @@ public class PlaceOrderE2E extends TCBaseBeforeAfter{
 	String pass = "placeOrderTest";
 	
 	@Test(priority=1)
-	void homeShouldBeLoaded() {
+	void homeShouldBeLoaded() { 
+		driver.manage().window().maximize();
 		home = new POHome(driver);
 		String homeText = home.getHomeText();
 		Assert.assertEquals(homeText, "AutomationExercise");
@@ -47,4 +48,26 @@ public class PlaceOrderE2E extends TCBaseBeforeAfter{
 		product.clickViewCart();
 		Thread.sleep(2000);
 	}   
+	
+	@Test(priority=5)
+	void proceedToCheckout() throws InterruptedException {
+		product.proceedToCheckoutBtn();
+		product.placeOrder();
+		Thread.sleep(3000);  
+		product.fillOutPayment("cardName", "cardName@test.com", "123", "09", "2025");
+		Thread.sleep(3000);  
+	}
+	
+	@Test(priority=6)
+	void payAndConfirmOrder() {
+		product.clickPayAndConfirmOrder();
+	}
+	
+	@Test(priority=7)
+	void invoiceShouldBeDownload() throws InterruptedException {
+		product.downloadInvoice();
+		Thread.sleep(3000);
+	}
+	 
+	
 }
