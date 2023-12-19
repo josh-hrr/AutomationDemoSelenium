@@ -4,11 +4,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import TCBaseBeforeAfter.TCBaseBeforeAfter;
-import pageObject.POLoginPageAutoPage;
+import pageObject.POCreateAcctPageAutoPage;
 
-public class LoginTestAutoPage extends TCBaseBeforeAfter { 
+public class CreateAcctTestAutoPage extends TCBaseBeforeAfter { 
 	 
-	POLoginPageAutoPage loginPage; 
+	POCreateAcctPageAutoPage loginPage; 
 	String name = "Joshua";
 	String email = "test@12345678910.com";
 	
@@ -16,7 +16,7 @@ public class LoginTestAutoPage extends TCBaseBeforeAfter {
 	void homePageShouldBeLoaded() {
 		logger.debug("Application logs...");
 		logger.info("Starting Test Case 01");
-		loginPage = new POLoginPageAutoPage(driver);
+		loginPage = new POCreateAcctPageAutoPage(driver);
 		Assert.assertEquals(loginPage.getSlideShowText(), "AutomationExercise");
 	}
 	

@@ -53,13 +53,14 @@ public class ExtentReportManager implements ITestListener {
 		test = extent.createTest(result.getName());
 		test.log(Status.FAIL, "Test Failed");
 		test.log(Status.FAIL, result.getThrowable().getMessage());
- 
+  /*
 		try {
 			String imgPath = new TCBaseBeforeAfter().captureScreen(result.getName());
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (IOException e1) {
 			e1.printStackTrace();
-		} 
+		}  
+		*/
 	}
 
 	public void onTestSkipped(ITestResult result) {

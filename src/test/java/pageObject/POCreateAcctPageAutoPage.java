@@ -8,8 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select; 
 
 
-public class POLoginPageAutoPage extends POBasePage { 
-	public POLoginPageAutoPage(WebDriver chrome) { 
+public class POCreateAcctPageAutoPage extends POBasePage { 
+	public POCreateAcctPageAutoPage(WebDriver chrome) { 
 		super(chrome);
 	}
 	

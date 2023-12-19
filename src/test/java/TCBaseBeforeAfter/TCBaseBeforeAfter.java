@@ -49,7 +49,8 @@ public class TCBaseBeforeAfter {
 	public void tearDown() {
 		driver.quit();
 	}  
-	 
+	  
+	/*
 	public String captureScreen(String tname) throws IOException {
 
 		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
@@ -65,4 +66,5 @@ public class TCBaseBeforeAfter {
 		}
 		return destination; 
 	}  
+	*/ 
 }

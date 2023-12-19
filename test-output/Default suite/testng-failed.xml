@@ -3,21 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.LoginTestAutoPage">
+      <class name="testCases.PlaceOrderE2E">
         <methods>
-          <include name="signupBtnShouldBeClicked"/>
-          <include name="accountShouldBeCreated"/>
-          <include name="accountShouldBeDeleted"/>
           <include name="setup"/>
-          <include name="homePageShouldBeLoaded"/>
-          <include name="signUpShouldBeFilledOut"/>
-          <include name="signupFormShouldBeFilledOut"/>
-          <include name="signUpShouldBeSubmitted"/>
+          <include name="homeShouldBeLoaded"/>
           <include name="tearDown"/>
-          <include name="radioButtonShouldBeClicked"/>
-          <include name="continueBtnShouldBeClicked"/>
         </methods>
-      </class> <!-- testCases.LoginTestAutoPage -->
+      </class> <!-- testCases.PlaceOrderE2E -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

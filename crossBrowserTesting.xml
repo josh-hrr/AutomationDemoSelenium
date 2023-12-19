@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="CreateAcctSuite" parallel="tests">
+<suite name="CreateAcctSuite">
 	
 	<listeners>
 		<listener class-name="utilities.ExtentReportManager"></listener>
@@ -9,14 +9,15 @@
   <test thread-count="5" name="ChromeTests">
 	<parameter name="browser" value="chrome"></parameter>
     <classes>
-      <class name="testCases.LoginTestAutoPage"/> 
+      <class name="testCases.CreateAcctTestAutoPage"/> 
+      <class name="testCases.PlaceOrderE2E"></class>
     </classes>
   </test> <!-- CreateAcctTest -->
   
   <test thread-count="5" name="FireFox">
 	<parameter name="browser" value="firefox"></parameter>
     <classes>
-      <class name="testCases.LoginTestAutoPage"/> 
+      <class name="testCases.CreateAcctTestAutoPage"/> 
     </classes>
   </test> <!-- CreateAcctTest --> 
   
