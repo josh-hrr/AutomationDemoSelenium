@@ -18,6 +18,9 @@ public class POLogin extends POBasePage {
 	@FindBy(css="button[data-qa='login-button']")
 	WebElement loginButton;
 	
+	@FindBy(css="li a[href='/logout']")
+	WebElement logoutButton;
+	
 	public void inputEmail(String email) {
 		loginEmail.sendKeys(email);
 	} 
@@ -28,5 +31,7 @@ public class POLogin extends POBasePage {
 		loginButton.click();
 	}
 	
-	
+	public void clickLogout() {
+		logoutButton.click();
+	} 
 }

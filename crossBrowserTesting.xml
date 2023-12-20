@@ -9,7 +9,7 @@
   <test thread-count="5" name="ChromeTests">
 	<parameter name="browser" value="chrome"></parameter>
     <classes> 
-      <class name="testCases.PlaceOrderE2E"></class>
+      <class name="testCases.LoginTestDataDriven"></class> 
     </classes>
   </test> <!-- CreateAcctTest -->
   

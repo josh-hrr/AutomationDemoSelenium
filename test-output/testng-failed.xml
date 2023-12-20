@@ -7,15 +7,14 @@
   <test thread-count="5" name="ChromeTests(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.PlaceOrderE2E">
+      <class name="testCases.LoginTestDataDriven">
         <methods>
           <include name="setup"/>
-          <include name="proceedToCheckout"/>
-          <include name="invoiceShouldBeDownload"/>
-          <include name="payAndConfirmOrder"/>
+          <include name="loginTest" invocation-numbers="0 1"/>
+          <include name="logoutTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- testCases.PlaceOrderE2E -->
+      </class> <!-- testCases.LoginTestDataDriven -->
     </classes>
   </test> <!-- ChromeTests(failed) -->
 </suite> <!-- Failed suite [CreateAcctSuite] -->
